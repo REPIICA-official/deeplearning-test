@@ -1,0 +1,70 @@
+================================================================
+대학생 학업 성공 예측 / 수면의 질 예측 데이터셋 출처 안내
+================================================================
+
+본 저장소의 두 데이터셋(StudentSuccess.csv, SleepQuality.csv)은
+교육 목적의 합성 데이터(synthetic data)입니다.
+
+----------------------------------------------------------------
+1. StudentSuccess.csv (학업 성공 예측)
+----------------------------------------------------------------
+
+특성 수: 16개
+샘플 수: 470명
+라벨: 통과(1) / 낙제(0)
+
+[참고 데이터셋]
+
+(1) UCI Student Performance Data Set
+    - URL: https://archive.ics.uci.edu/dataset/320/student+performance
+    - 설명: 포르투갈 두 학교 고등학생의 수학/포르투갈어 성적 데이터
+    - 인스턴스: 649개
+    - 특성: 33개 (인구통계, 사회, 학업 관련)
+    - 인용: Cortez, P., & Silva, A. (2008). Using Data Mining to
+      Predict Secondary School Student Performance.
+
+(2) UCI Predict Students' Dropout and Academic Success
+    - URL: https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success
+    - 설명: 포르투갈 고등교육 학생들의 자퇴 및 학업 성공 예측
+    - 인스턴스: 4,424개
+    - 특성: 36개
+    - 인용: Realinho, V., Vieira Martins, M., Machado, J., &
+      Baptista, L. (2021). Predict Students' Dropout and
+      Academic Success [Dataset]. UCI Machine Learning Repository.
+
+(3) UCI Higher Education Students Performance Evaluation
+    - URL: https://archive.ics.uci.edu/dataset/856/higher+education+students+performance+evaluation
+    - 설명: 키프로스 공과대학·교육대학 학생 데이터
+    - 인스턴스: 145개
+    - 특성: 31개
+
+----------------------------------------------------------------
+2. SleepQuality.csv (수면의 질 예측)
+----------------------------------------------------------------
+
+특성 수: 13개
+샘플 수: 470명
+라벨: 잘 잤다(1) / 못 잤다(0)
+
+[참고 데이터셋]
+
+(1) Kaggle Sleep Health and Lifestyle Dataset
+    - URL: https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset
+    - 설명: 수면, 심혈관, 라이프스타일 지표 데이터
+    - 인스턴스: 374개
+    - 특성: 13개 (Person ID, Gender, Age, Occupation, Sleep Duration,
+      Quality of Sleep, Physical Activity Level, Stress Level,
+      BMI Category, Blood Pressure, Heart Rate, Daily Steps,
+      Sleep Disorder)
+
+----------------------------------------------------------------
+공통 안내
+----------------------------------------------------------------
+
+- CSV 파일은 헤더 없이 모든 값이 숫자로 되어 있어,
+  numpy의 np.loadtxt(path, delimiter=',') 한 줄로 불러올 수 있습니다.
+- 마지막 컬럼이 라벨(0/1), 그 앞 컬럼들이 입력 특성입니다.
+- 본 합성 데이터는 교육 목적으로만 사용해 주세요.
+  실제 의료/학업 의사결정에 활용해서는 안 됩니다.
+
+================================================================
